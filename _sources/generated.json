@@ -1,0 +1,52 @@
+{
+    "nixos-hardware": {
+        "cargoLock": null,
+        "date": "2026-08-19",
+        "extract": null,
+        "name": "nixos-hardware",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "0471accf8d0a8210b31d947497d179ecc99e0021",
+            "sha256": "sha256-HHfv2/HkNSKbbSyU9iD/g8lbP6r4tl33sSw1W4rXCk0=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/NixOS/nixos-hardware"
+        },
+        "version": "0471accf8d0a8210b31d947497d179ecc99e0021"
+    },
+    "sing-box-static-amd64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "sing-box-static-amd64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-FQRW+U/Pk2/CUZ3ijYVkIvtnGh/xgc2Qm3jyDiCP3Lg=",
+            "type": "url",
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.19/sing-box-1.13.19-linux-amd64-musl.tar.gz"
+        },
+        "version": "1.13.19"
+    },
+    "sing-box-static-arm64": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "sing-box-static-arm64",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-UUYYGIQxDqI4Hghe9QQAXIG9CfgHIVQhJ++wpz8SzS8=",
+            "type": "url",
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.19/sing-box-1.13.19-linux-arm64-musl.tar.gz"
+        },
+        "version": "1.13.19"
+    }
+}

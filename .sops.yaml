@@ -1,0 +1,41 @@
+keys:
+  - &gohei age1h9jwceywwd0ldp64vmydvpde4gaxhp3j5cmfmtny64adw3qh5dpsak0xyr
+  - &hari age1k26kk2ukmgd5mszzttdlpa7cl0wk32fju9jqskuzsrwm597pq5js7m8tg9
+  - &ofuda age1dufgysvknffzl63vq2ls97s7fc3050mpx6gme3jksqs2z4kvj32sgp64r2
+  - &sakaki age1ap4z626uk2tap26cfkqx5ke3qdga66dkpkcn4rur8us5s2x0m9dsxr2hrc
+  - &suzu age1u55hy9fqllpcwn88fh22n8v7yahkhsggwzma7xc2s870ry2j3ghqf7fe5h
+  - &omamori age17urgtgj3sum3m4ezgrguhmlle3wmzf8tnrr2t7th96vs7szex38sjv0m4t
+
+creation_rules:
+  - path_regex: ^modules/secrets/cloudflare-dns-token-for-org.yaml$
+    age: [ *gohei ]
+
+  - path_regex: ^modules/secrets/ssh-ofuda.yaml$
+    age: [ *gohei ]
+
+  - path_regex: ^modules/secrets/ssh-hari.yaml$
+    age: [ *gohei ]
+
+  - path_regex: ^modules/secrets/ssh-github.yaml$
+    age: [ *gohei ]
+
+  - path_regex: ^modules/secrets/cloudflare-dns-token-for-me.yaml$
+    age: [ *gohei, *hari, *ofuda, *sakaki ]
+
+  - path_regex: ^hosts/hari/sing-box.json$
+    age: [ *gohei, *hari ]
+
+  - path_regex: ^hosts/hari/xray.json$
+    age: [ *gohei, *hari ]
+
+  - path_regex: ^hosts/ofuda/sing-box.json$
+    age: [ *gohei, *ofuda ]
+
+  - path_regex: ^hosts/ofuda/xray.json$
+    age: [ *gohei, *ofuda ]
+
+  - path_regex: ^modules/system/proxy-client/sing-box.json$
+    age: [ *gohei, *suzu, *sakaki, *omamori ]
+
+  - path_regex: ^modules/system/proxy-client/xray.json$
+    age: [ *gohei, *suzu, *sakaki, *omamori ]

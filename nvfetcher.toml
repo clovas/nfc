@@ -1,0 +1,13 @@
+[sing-box-static-amd64]
+src.github = "SagerNet/sing-box"
+src.prefix = "v"
+fetch.url = "https://github.com/SagerNet/sing-box/releases/download/v$ver/sing-box-$ver-linux-amd64-musl.tar.gz"
+
+[sing-box-static-arm64]
+src.github = "SagerNet/sing-box"
+src.prefix = "v"
+fetch.url = "https://github.com/SagerNet/sing-box/releases/download/v$ver/sing-box-$ver-linux-arm64-musl.tar.gz"
+
+[nixos-hardware]
+src.git = "https://github.com/NixOS/nixos-hardware"
+fetch.git = "https://github.com/NixOS/nixos-hardware"
