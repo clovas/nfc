@@ -8,32 +8,32 @@
 {
   nixos-hardware = {
     pname = "nixos-hardware";
-    version = "0471accf8d0a8210b31d947497d179ecc99e0021";
+    version = "4bc63156b109ee7b4103e3ec30565c8c92bde435";
     src = fetchgit {
       url = "https://github.com/NixOS/nixos-hardware";
-      rev = "0471accf8d0a8210b31d947497d179ecc99e0021";
+      rev = "4bc63156b109ee7b4103e3ec30565c8c92bde435";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-HHfv2/HkNSKbbSyU9iD/g8lbP6r4tl33sSw1W4rXCk0=";
+      sha256 = "sha256-c3oMt0QoE+4yiRk6u1m2L9ogjaUw0uTGn9yk808KkgE=";
     };
-    date = "2026-08-19";
+    date = "2026-10-07";
   };
   sing-box-static-amd64 = {
     pname = "sing-box-static-amd64";
-    version = "1.13.19";
+    version = "1.14.2";
     src = fetchurl {
-      url = "https://github.com/SagerNet/sing-box/releases/download/v1.13.19/sing-box-1.13.19-linux-amd64-musl.tar.gz";
-      sha256 = "sha256-FQRW+U/Pk2/CUZ3ijYVkIvtnGh/xgc2Qm3jyDiCP3Lg=";
+      url = "https://github.com/SagerNet/sing-box/releases/download/v1.14.2/sing-box-1.14.2-linux-amd64-musl.tar.gz";
+      sha256 = "sha256-j2y0vPlNKzPGXVLg1bFC2ympODNvH/cmfzl6w3WPwpc=";
     };
   };
   sing-box-static-arm64 = {
     pname = "sing-box-static-arm64";
-    version = "1.13.19";
+    version = "1.14.2";
     src = fetchurl {
-      url = "https://github.com/SagerNet/sing-box/releases/download/v1.13.19/sing-box-1.13.19-linux-arm64-musl.tar.gz";
-      sha256 = "sha256-UUYYGIQxDqI4Hghe9QQAXIG9CfgHIVQhJ++wpz8SzS8=";
+      url = "https://github.com/SagerNet/sing-box/releases/download/v1.14.2/sing-box-1.14.2-linux-arm64-musl.tar.gz";
+      sha256 = "sha256-Z1KXOU+UMM67crPEi6i84Nb3x1Cp1oqPf4jFFcglXNE=";
     };
   };
 }
