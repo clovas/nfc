@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.git = {
     enable = true;
@@ -7,4 +7,5 @@
       user.email = "clovas@radicate.me";
     };
   };
+  environment.systemPackages = with pkgs; [ convco ];
 }
