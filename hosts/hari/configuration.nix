@@ -5,6 +5,7 @@
     serial
     ddns
     proxy-server
+    tun4
   ];
 
   swapDevices = [
