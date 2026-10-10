@@ -10,6 +10,7 @@
     proxy-server
     ddns
     podman
+    tun6
   ];
 
   boot.loader.grub.efiInstallAsRemovable = true;
