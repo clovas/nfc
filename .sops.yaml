@@ -39,3 +39,9 @@ creation_rules:
 
   - path_regex: ^modules/system/proxy-client/xray.json$
     age: [ *gohei, *suzu, *sakaki, *omamori ]
+
+  - path_regex: ^modules/system/proxy-client/tun4.conf$
+    age: [ *gohei, *hari ]
+
+  - path_regex: ^modules/system/proxy-client/tun6.conf$
+    age: [ *gohei, *ofuda ]
