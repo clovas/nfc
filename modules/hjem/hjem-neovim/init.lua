@@ -14,7 +14,22 @@ vim.cmd [[
   colorscheme modus
 ]]
 if os.getenv('SSH_TTY') ~= nil then
-  vim.g.clipboard = "osc52"
+  local osc52 = require('vim.ui.clipboard.osc52')
+  local function paste() 
+      local content = vim.fn.getreg('"')
+      return vim.split(content, "\n")
+  end
+  vim.g.clipboard = {
+    name = "OSC 52",
+    copy = {
+      ['+'] = osc52.copy('+'),
+      ['*'] = osc52.copy('*'),
+    },
+    paste = {
+      ['+'] = paste(),
+      ['*'] = paste(),
+    },
+  }
 end
 local ok, builtin = pcall(require, "telescope.builtin")
 if ok then
